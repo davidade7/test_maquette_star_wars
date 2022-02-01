@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  background: #060447;
+  margin: 158px 0 144px 0;
+  overflow: hidden;
+}
+
+.container {
+  width: 1066px;
+  margin: auto;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2, p {
+  font-family: Montserrat;
+  color: #FFF38A;
+  margin-top: 0;
+  text-align: left;
+  letter-spacing: 0em;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49px;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  max-width : 422px;
+}
+
+
+/* icons */
+.icons {
+  position: relative;
+  height: 80px;
+}
+.icons .active {
+  opacity: 100%;
+  position: absolute;
+  left: 0;
+  transition: 0.2s ease; 
+}
+.icons .next {
+  opacity: 0%;
+  position: absolute;
+  left: 96px;
+  transition: 0.2s ease; 
+}
+.icons .prev {
+  opacity: 0%;
+  position: absolute;
+  left: -136px;
+  transition: 0.2s ease; 
+}
+
+
+/* Movies Titles */
+.movies-titles {
+  position: relative;
+  margin-top: 24px;
+  height: 49px;
+}
+.movies-titles .active {
+  opacity: 100%;
+  position: absolute;
+  left: 0;
+  transition: 0.2s ease; 
+}
+.movies-titles .next {
+  opacity: 0%;
+  position: absolute;
+  left: 72px;
+  transition: 0.2s ease; 
+}
+.movies-titles .prev {
+  opacity: 0%;
+  position: absolute;
+  left: -112px;
+  transition: 0.2s ease; 
+}
+
+
+/* Movies Snipets */
+.movies-snipets {
+  position: relative;
+  margin-top: 8px;
+  width: 422px;
+}
+.movies-snipets .active {
+  opacity: 100%;
+  position: absolute;
+  left: 0;
+  transition: 0.2s ease; 
+}
+.movies-snipets .next {
+  opacity: 0%;
+  position: absolute;
+  left: 48px;
+  transition: 0.2s ease; 
+}
+.movies-snipets .prev {
+  opacity: 0%;
+  position: absolute;
+  left: -48px;
+  transition: 0.2s ease; 
+}
+
+
+/* Dates */
+.movies-dates {
+  position: absolute;
+  display: flex;
+  bottom: 168px;
+}
+
+.tens-dates {
+  position: relative;
+}
+.tens-dates .active {
+  margin-left: 15px;
+  position: absolute;
+  left: 0;
+  opacity: 100%;
+  transition: 0.2s ease; 
+}
+.tens-dates .next {
+  position: absolute;
+  left: 59px;
+  opacity: 0%;
+  transition: 0.2s ease; 
+}
+.tens-dates .prev {
+  position: absolute;
+  left: -113px;
+  opacity: 0%;
+  transition: 0.2s ease; 
+}
+
+.units-dates {
+  position: relative;
+  left: 131px;
+}
+.units-dates .active {
+  margin-left: 20px;
+  position: absolute;
+  left: 0;
+  opacity: 100%;
+  transition: 0.2s ease; 
+}
+.units-dates .next {
+  position: absolute;
+  left: 59px;
+  opacity: 0%;
+  transition: 0.2s ease; 
+}
+.units-dates .prev {
+  position: absolute;
+  left: -113px;
+  opacity: 0%;
+  transition: 0.2s ease; 
+}
+
+/* COVERS */
+.movies-covers {
+  position: relative;
+  right: 0;
+  height: 604px;
+}
+.movies-covers .active {
+  position: absolute;
+  right: 0;
+  opacity: 100%;
+  transition: 0.2s ease; 
+}
+.movies-covers .next {
+  position: absolute;
+  right: -422px;
+  opacity: 0%;
+  transition: 0.2s ease; 
+}
+.movies-covers .prev {
+  position: absolute;
+  right: 422px;
+  opacity: 0%;
+  transition: 0.2s ease; 
+}
+
+
+/* Navigation */
+.navigation, .arrows, .left-arrow, .right-arrow, .progress-bar, .circles, .circle {
+  display: flex;
+}
+.navigation, .arrows, .circles {
+  justify-content: space-between;
+}
+.navigation {
+  margin-top: 83px;
+  position: relative;
+  
+}
+.arrows {
+  width: 120px;
+}
+.arrows, .etapier {
+  height: 40px;
+}
+.left-arrow, .right-arrow, .etapier, .progress-bar, .circle {
+  align-items: center;
+}
+.left-arrow:hover, .right-arrow:hover {
+  cursor: pointer;
+}
+
+
+.full-progress-bar {
+  position: relative;
+  top: 18px;
+  z-index: -2;
+  width: 838px;
+  background-color: #827B68;
+}
+#on-going-progress-bar {
+  width: 0%;
+  height: 2px;
+  background-color: #FFF38A;
+  transition: 0.4s ease; 
+}
